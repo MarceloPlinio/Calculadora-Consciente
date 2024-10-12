@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Consciente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+<body>
+<main>
+    <div class="titulo"><h1>Calculadora Consciente</h1></div>
+
+    
+    
+    <div class="container">
+        <label for="meses">Meses de Bolsa Família usados em apostas:</label>
+        <input type="number" id="meses" placeholder="Ex: 2">
+        
+        <label for="valor">Valor recebido mensalmente (em R$):</label>
+        <input type="number" id="valor" value="600">
+        
+        <label for="anos">Anos para o investimento:</label>
+        <input type="number" id="anos" placeholder="Ex: 5">
+        
+        <button onclick="calcularImpacto()">Calcular Impacto</button>
+        
+        <div id="resultado"></div>
+
+        
+    </div>
+
+    <div class="pesquisa">
+        <h2>Por que este site?</h2>
+        <p>O Brasil tem enfrentado desafios significativos relacionados ao crescimento das apostas online. Segundo dados da FEBRABAN, muitos brasileiros que recebem benefícios como o Bolsa Família estão gastando uma parte substancial de sua renda em jogos de azar, levando a um potencial rombo nas finanças públicas.</p>
+        <p>Estudos apontam que a combinação de vulnerabilidade financeira e a facilidade de acesso às apostas pode resultar em graves consequências, incluindo endividamento, problemas de saúde mental e dependência.</p>
+        <p>Este site visa conscientizar sobre os impactos financeiros e psicológicos das apostas, fornecendo ferramentas para calcular o impacto de gastos com jogos e opções de ajuda disponíveis.</p>
+        
+    </div>
+
+    <div class="ajuda">
+        <h2>Canal de Ajuda <img id="icons" src="images/aperto-de-mao.png" alt="salvação"> </h2>
+        
+        <p>Se você ou alguém que você conhece está enfrentando dificuldades com jogos de azar, considere buscar ajuda. Aqui estão alguns recursos disponíveis:</p>
+        <ul>
+            <li><a href="https://www.cvv.org.br" target="_blank">CVV (Centro de Valorização da Vida)</a> - Apoio emocional e prevenção ao suicídio. <strong>Telefone:</strong> 188</li>
+            <li><a href="http://www.junaab.org.br" target="_blank">JUNAAB</a> - Apoio a jovens e suas famílias sobre dependência química. <strong>Telefone:</strong> 55 (11) 2133-5400</li>
+            <li><a href="https://www.cfp.org.br" target="_blank">Conselho Federal de Psicologia (CFP)</a> - Informações sobre serviços de saúde mental. <strong>Telefone:</strong> 55 (61) 3343-3020</li>
+            <li><a href="http://www.apcd.org.br" target="_blank">APCD</a> - Suporte para dependentes químicos e suas famílias. <strong>Telefone:</strong> 55 (11) 3315-9330</li>
+            <li><a href="https://www.gadj.com.br" target="_blank">Grupo de Apoio a Dependentes de Jogos (GADJ)</a> - Assistência para problemas relacionados a jogos. <strong>Telefone:</strong> 55 (11) 3259-1093</li>
+        </ul>
+    </div>
+   <script src="script.js"></script>
+</main>
+</body>
+</html>

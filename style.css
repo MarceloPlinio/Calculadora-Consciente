@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #e0e5ec;
+    --text-color: #1f1f1f;
+    --highlight-color: #ff6b6b;
+    --shadow-color: #babecc;
+    --light-shadow: #ffffff;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1, h2 {
+    color: var(--highlight-color);
+    text-shadow: 1px 1px 1px var(--light-shadow);
+  }
+  
+  .calculator {
+    background: var(--bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 
+      8px 8px 15px var(--shadow-color),
+      -8px -8px 15px var(--light-shadow);
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background: var(--bg-color);
+    box-shadow: 
+      inset 5px 5px 10px var(--shadow-color),
+      inset -5px -5px 10px var(--light-shadow);
+    color: var(--text-color);
+    font-size: 16px;
+  }
+  
+  button {
+    background: var(--highlight-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 
+      5px 5px 10px var(--shadow-color),
+      -5px -5px 10px var(--light-shadow);
+  }
+  
+  button:hover {
+    background: #ffafaf;
+    box-shadow: 
+      2px 2px 5px var(--shadow-color),
+      -2px -2px 5px var(--light-shadow);
+  }
+  
+  #resultado {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    box-shadow: 
+      5px 5px 10px var(--shadow-color),
+      -5px -5px 10px var(--light-shadow);
+  }
+  
+
+  
+  .pesquisa, .ajuda {
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 20px;
+    background: var(--bg-color);
+    box-shadow: 
+      8px 8px 15px var(--shadow-color),
+      -8px -8px 15px var(--light-shadow);
+  }
+  
+  a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ff8585;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    .calculator, .pesquisa, .ajuda {
+      padding: 20px;
+    }
+  }
+
+  .titulo {
+    text-align: center;
+  }
+
+#icons {
+    width:17px;
+}
